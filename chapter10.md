@@ -56,6 +56,7 @@ ______variant(kiểu dữ liệu đa năng)
 
 
 Và đây là bảng để bạn xem ý nghĩa số điểm của mình:
+-----------------
 |Điểm|Ý nghĩa|
 |---------|--------|
 |0-14| Bạn đang bắt đầu trở thành một lập trình viên (Beginning), có thể bạn đang trong năm đầu tiên của môn khoa học máy tính trong trường hoặc bạn đang tự học một ngôn ngữ đầu tiên. Bạn có thể học thêm nhiều nữa bằng cách đọc một trong số những quyển sách được liệt kê ở phần phụ ở dưới. Nhiều diễn tả về kĩ thuật trong phần này của cuốn sách hướng tới những lập trình viên vào loại Advanced (loại trên Beginning), và bạn sẽ hiểu được nhiều từ chúng hơn sau khi bạn đọc ít nhất một quyển trong những quyển sách kia.|
