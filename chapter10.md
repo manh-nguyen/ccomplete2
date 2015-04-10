@@ -84,7 +84,8 @@ Sedgewick, Robert. Algorithms in C++, Part V, 3d ed. Boston, MA: Addison-Wesley,
 -------------------------------------
 Phần này sẽ nói về cách sắp xếp khai báo các biến. Hẳn là đây là một công việc không quá phức tạp, và bạn có thể nghĩ rằng nó quá là vặt vãnh, không đáng để dành hẳn một mục trong cuốn sách này. Tuy nhiên, bạn dành nhiều thời gian để  khai báo biến, và phát triển những thói quen tốt thì bạn có thể tiết kiệm được thời gian và cả sự bực dọc trong suốt vòng đời dự án.
 
-***Tham khảo***
+***Tham khảo chéo***
+
 *Chi tiết về việc bố trí khai báo biến bạn có thể tham khảo "Laying Out Data Declarations" trong " Laying Out Individual Statements", Commenting Data Declarations" trong "Commenting Techniques"*
  
 
@@ -99,9 +100,9 @@ Khai báo ẩn là một trong những tính năng nguy hiểm nhất trong bấ
  **KEY POINT**
 --------------
 
-Nếu bạn đang lập trình với một ngôn ngữ yêu cầu bạn phải khai báo biến thì bạn sẽ phải gặp 2 sai lầm trước khi mà chương trính nó "cắn" bạn . Đầu tiên, bạn phải đặt cả acctNum và acctNo vào trong thân của chương trình. Rồi bạn phải khai báo cả hai biến đó vào trong chương trình.
+Nếu bạn đang lập trình với một ngôn ngữ yêu cầu bạn phải khai báo biến thì bạn sẽ phải gặp 2 sai lầm trước khi mà chương trính nó "cắn" bạn . Đầu tiên, bạn phải đặt cả acctNum và acctNo vào trong thân của đoạn chương trình. Rồi bạn phải khai báo cả hai biến đó vào trong đoạn chương trình đó.
 >Đoạn này không rõ ý tác giả, nguyên văn là:"If you're programming in a language that requires you to declare variables, you have to make two mistakes before your program will bite you. First you have to put both acctNum and acctNo into the body of the routine. Then you have to declare both variables in the routine"
->Chỗ này mình dịch từ routine thành chương trình có vẻ chưa sát lắm
+
 
 Thế này thì khá khó để bạn gặp sai lầm, và nó sẽ loại bỏ hầu hết những vấn đề về biến đồng nghĩa ( synonymous-variables). Những ngôn ngữ yêu cầu bạn khai báo dữ liệu thật rõ ràng, thực chất là nó yêu cầu bạn cẩn thận hơn trong việc sử dụng dữ liệu, đó chính là tác dụng lớn nhất của chúng. Thế giờ tôi phải làm gì khi ngôn ngữ đó hỗ trợ khai báo ẩn? Đây là một số gợi ý cho bạn:
 
@@ -112,8 +113,94 @@ Thế này thì khá khó để bạn gặp sai lầm, và nó sẽ loại bỏ 
 **Sử dụng quy ước đặt tên**. Thiết lập một quy ước đặt tên cho những hậu tố chính (suffixes) như là Option Explicit và No để bạn không sử dụng 2 biến khi bạn chỉ muốn dùng có một.
 >Đoạn này không ổn lắm
 
-***Tham khảo***
+***Tham khảo chéo***
+
 *Chi tiết về việc chuẩn hóa viết tắt, xem "General Abbreviation Guidelines" trong Creating Short Names That Are Readable.*
 >Phần này trong bản gốc có dẫn link đến các bài viết
 
 Kiểm tra lại tên biến. Sử dụng những gợi ý mà compiler hoặc trình tiện ích nào đó tạo ra. Nhiều compiler có thể liệt kê tất cả các biến trong chương trình, cho phép bạn nhận ra cả acctNum và acctNo. Chúng cũng chỉ ra những biến bạn khai báo nhưng lại không dùng.
+
+**10.3.Hướng dẫn khởi tạo biến**
+================================
+
+**KEYPOINT**
+------------
+
+Khai báo dữ liệu không tốt là một trong những lí do gây lỗi lớn nhất trong lập trình. Phát triển các kĩ năng tránh những vấn đề về khởi tạo biến có thể tiết kiệm rất nhiều thời gian sửa lỗi.
+
+Lỗi khi khởi tạo biến có thể đến từ một biến có giá trị ban đầu mà bạn không mong muốn nó có. Dưới đây là một số khả năng:
+
+ 
+
+ - Biến từ đầu đã chưa hề được gán giá trị. Giá trị của nó có thể là bất kì giá trị nào trong bộ nhớ từ khi khởi động chương trình.
+
+**Tham khảo chéo**
+*Test sơ bộ dựa trên sự khai báo biến và sử dụng các mẫu có sẵn, hãy xem "Data-Flow Testing" trong Bag of Testing Tricks.*
+>Phần này trong tài liệu gốc có dẫn link tới các bài viết
+
+ - Giá trị của biến lỗi thời. Biến đã được gán một giá trị tại một số thời điểm, nhưng giá trị đó không còn hợp lệ nữa.
+
+ - Một phần của biến được gán giá trị còn một phần thì không
+ 
+Trường hợp cuối này thường có một số biến thể. Bạn có thể khai báo một số thành viên trong đối tượng nhưng không phải tất cả chúng. Bạn có thể quên mất không chỉ định bộ nhớ và rồi khởi tạo "biến" con trỏ chưa được khởi tạo. Nghĩa là bạn thực sự chọn một cách ngẫu nhiên  một phần của bộ nhớ máy tính và gán chúng một số giá trị. Nó có thể là bộ nhớ chứa dữ liệu. Nó có thể là bộ nhớ chứa code. Nó có thể là bộ nhớ chứa hệ điều hành. Triệu chứng của những vấn đề về con trỏ thay đổi theo thời gian nên lỗi về con trỏ khó sửa hơn bất kì lỗi nào khác.
+
+Sau đây sẽ là hướng dẫn để tránh các vấn đề về khởi tạo:
+
+**Khởi tạo mỗi biến khi nó đã được khai báo.** Đây là một hình thức không hề tốn kém để bảo vệ cho chương trình.  Nó là một chính sách bảo hiểm rất tốt cho những lỗi khởi tạo. Ví dụ dưới đây đảm bảo rằng `studentGrades` sẽ bị khởi tạo lại một thời điểm bạn gọi đoạn chương trình chứa nó.
+
+    Ví dụ 10-1. C++ Ví dụ về  Khởi tạo vào thời điểm khai báo
+    float studentGrades[ MAX_STUDENTS ] = { 0.0 };
+**Khởi tạo biến gần vị trí nó được dùng lần đầu tiên**. Một số ngôn ngữ (ví dụ Visual Basic) không hỗ trợ việc khởi tạo biến khi chúng được khởi tạo. Bạn có thể thực hiện theo coding style như sau,  khai báo nhóm thánh 1 nhóm, khởi tạo nhóm thành 1 nhóm như ví dụ bên dưới. Làm như vậy tất cả đều xa việc sử dụng đầu tiên của các biến.
+
+**Tham khảo chéo** 
+*Kiểm tra các tham số truyền vào cũng là một cách để bảo vệ chương trình. Chi tiêt tại chương 8*
+
+>Phần này trong tài liệu gốc có dẫn link tới chương 8
+
+     Example 10-2. 
+    
+    ' declare all variables
+    Dim accountIndex As Integer
+    Dim total As Double
+    Dim done As Boolean
+    
+    ' initialize all variables
+    accountIndex = 0
+    total = 0.0
+    done = False
+    ...
+    
+    ' code using accountIndex
+    ...
+    
+    ' code using total
+    ...
+    
+    ' code using done
+    While Not done
+       ...
+
+Một cách luyện tập tốt hơn nữa là khởi tạo biến thật gần với vị trí mà lần đầu tiên biến được sử dụng giống như ví dụ bên dưới.
+
+    Example 10-3. Visual Basic Example of Good Initialization
+    
+    Dim accountIndex As Integer
+    
+    accountIndex = 0
+    ' code using accountIndex
+    ...
+    
+    Dim total As Double
+    total = 0.0       <-- 1
+    ' code using total
+    ...
+    
+    Dim done As Boolean
+    done = False       <-- 2
+    ' code using done
+    While Not done
+    ...
+    (1) total được khai báo và khởi tạo gần với vị trí nó được sử dụng đầu tiên
+    (2) done cũng được khai báo và khởi tạo gần với vị trí nó được sử dụng đầu tiên
+
+Ví dụ thứ hai là tối ưu trong một số trường hợp.
