@@ -80,3 +80,40 @@ Sedgewick, Robert. Algorithms in C++, Parts I-IV, 3d ed. Boston, MA: Addison-Wes
 
 Sedgewick, Robert. Algorithms in C++, Part V, 3d ed. Boston, MA: Addison-Wesley, 2002.
 
+**10.2.Making Variable Declarations Easy**
+-------------------------------------
+Phần này sẽ nói về cách sắp xếp khai báo các biến. Hẳn là đây là một công việc không quá phức tạp, và bạn có thể nghĩ rằng nó quá là vặt vãnh, không đáng để dành hẳn một mục trong cuốn sách này. Tuy nhiên, bạn dành nhiều thời gian để  khai báo biến, và phát triển những thói quen tốt thì bạn có thể tiết kiệm được thời gian và cả sự bực dọc trong suốt vòng đời dự án.
+
+***Tham khảo***
+*Chi tiết về việc bố trí khai báo biến bạn có thể tham khảo "Laying Out Data Declarations" trong " Laying Out Individual Statements", Commenting Data Declarations" trong "Commenting Techniques"*
+ 
+
+> Phần này trong bản gốc có dẫn link đến những quyển sách/bài viết đó.
+
+**Implicit Declarations (Khai báo ẩn)**
+---------------
+Một số ngôn ngữ có hỗ trợ khai báo ẩn. Ví dụ, nếu bạn sử dụng một biến trong Microsoft Visual Basic mà không khai báo nó, thì compiler (trình biên dịch) sẽ tự động khai báo cho bạn ( tất nhiên là phụ thuộc cả vào cài đặt của compiler).
+
+Khai báo ẩn là một trong những tính năng nguy hiểm nhất trong bất kì ngôn ngữ nào. Nếu bạn lập trình trong Visual Basic, thì bạn sẽ thấy khó chịu khi cố hình dung ra sao *acctNo* lại không có giá trị đúng và rồi nhận ra rằng *acctNum* bị khởi tạo lại về 0. Những nhầm lẫn kiểu như vậy rất dễ gặp phải khi ngôn ngữ của bạn không bắt buộc phải khai báo biến.
+
+ **KEY POINT**
+--------------
+
+Nếu bạn đang lập trình với một ngôn ngữ yêu cầu bạn phải khai báo biến thì bạn sẽ phải gặp 2 sai lầm trước khi mà chương trính nó "cắn" bạn . Đầu tiên, bạn phải đặt cả acctNum và acctNo vào trong thân của chương trình. Rồi bạn phải khai báo cả hai biến đó vào trong chương trình.
+>Đoạn này không rõ ý tác giả, nguyên văn là:"If you're programming in a language that requires you to declare variables, you have to make two mistakes before your program will bite you. First you have to put both acctNum and acctNo into the body of the routine. Then you have to declare both variables in the routine"
+>Chỗ này mình dịch từ routine thành chương trình có vẻ chưa sát lắm
+
+Thế này thì khá khó để bạn gặp sai lầm, và nó sẽ loại bỏ hầu hết những vấn đề về biến đồng nghĩa ( synonymous-variables). Những ngôn ngữ yêu cầu bạn khai báo dữ liệu thật rõ ràng, thực chất là nó yêu cầu bạn cẩn thận hơn trong việc sử dụng dữ liệu, đó chính là tác dụng lớn nhất của chúng. Thế giờ tôi phải làm gì khi ngôn ngữ đó hỗ trợ khai báo ẩn? Đây là một số gợi ý cho bạn:
+
+**Tắt khai báo ẩn**. Một số trình biên dịch cho phép tắt khai báo ẩn.  Ví dụ, trong Visual Basic bạn có thể dùng câu lệnh *Option Explicit*, câu đó sẽ bắt bạn phải khai báo toàn bộ các biến trước khi bạn sử dụng chúng.
+
+**Khai báo  tất cả các biến**. Khi bạn gõ một biến mới, hay khai báo nó, dù cho compiler không yêu cầu, điều này có thể không giúp bạn bắt được tất cả các lỗi nhưng nó có thể bắt được một trong số chúng.
+
+**Sử dụng quy ước đặt tên**. Thiết lập một quy ước đặt tên cho những hậu tố chính (suffixes) như là Option Explicit và No để bạn không sử dụng 2 biến khi bạn chỉ muốn dùng có một.
+>Đoạn này không ổn lắm
+
+***Tham khảo***
+*Chi tiết về việc chuẩn hóa viết tắt, xem "General Abbreviation Guidelines" trong Creating Short Names That Are Readable.*
+>Phần này trong bản gốc có dẫn link đến các bài viết
+
+Kiểm tra lại tên biến. Sử dụng những gợi ý mà compiler hoặc trình tiện ích nào đó tạo ra. Nhiều compiler có thể liệt kê tất cả các biến trong chương trình, cho phép bạn nhận ra cả acctNum và acctNo. Chúng cũng chỉ ra những biến bạn khai báo nhưng lại không dùng.
