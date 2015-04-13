@@ -10,6 +10,8 @@ Trong xây dựng thì việc bạn muốn hoàn thiện tốt nhất mọi yêu
 
 > Theo như tài liệu của mình  cụm "Binding Time" với " Using Each Variable for Exactly One Purpose" có dẫn link đến 2 bài viết ngắn.
 
+Suốt chương này tôi sẽ dùng từ "biến" để đề cập đến các đối tượng cũng như các kiểu dữ liệu dựng sẵn như là integer và array. Cụm từ "kiểu dữ liệu" nói chung cũng được đề cập là các kiểu dữ liệu dựng sẵn, và từ "data" sẽ nhắc tới đối tượng hoặc kiểu dữ liệu dựng sẵn.
+
 **10.1.Kĩ năng về dữ liệu (Data Literacy)**
 -----------------
 
@@ -65,7 +67,7 @@ Và đây là bảng để bạn xem ý nghĩa số điểm của mình:
 |25-29|Bạn biết nhiều về các kiểu dữ liệu hơn cả tôi luôn. Bạn hãy cân nhắc viết một cuốn sách về vi tính cho mình đi. (và nhớ gửi tôi một bản copy nhé) |
 |30-32|Haha cái đồ khoa trương. Những thuật ngữ "elongated stream," "retroactive synapse," và "value chain" không hề được nhắc tới là những kiễu dữ liệu - chính tôi tạo ra chúng đấy. Hãy đọc phần ***"thành thật trong tri thức"*** ở chương 33 nhé! |
 
-   
+
 
 >"thành thật trong tri thức" là mình dịch từ tên của phần Intellectual Honesty chương 33, để cho đồng bộ thì bạn dịch chương 33 thì chú ý chỗ này nhé.
 
@@ -87,7 +89,7 @@ Phần này sẽ nói về cách sắp xếp khai báo các biến. Hẳn là đ
 ***Tham khảo chéo***
 
 *Chi tiết về việc bố trí khai báo biến bạn có thể tham khảo "Laying Out Data Declarations" trong " Laying Out Individual Statements", Commenting Data Declarations" trong "Commenting Techniques"*
- 
+
 
 > Phần này trong bản gốc có dẫn link đến những quyển sách/bài viết đó.
 
@@ -130,7 +132,7 @@ Khai báo dữ liệu không tốt là một trong những lí do gây lỗi l�
 
 Lỗi khi khởi tạo biến có thể đến từ một biến có giá trị ban đầu mà bạn không mong muốn nó có. Dưới đây là một số khả năng:
 
- 
+
 
  - Biến từ đầu đã chưa hề được gán giá trị. Giá trị của nó có thể là bất kì giá trị nào trong bộ nhớ từ khi khởi động chương trình.
 
@@ -141,7 +143,7 @@ Lỗi khi khởi tạo biến có thể đến từ một biến có giá trị 
  - Giá trị của biến lỗi thời. Biến đã được gán một giá trị tại một số thời điểm, nhưng giá trị đó không còn hợp lệ nữa.
 
  - Một phần của biến được gán giá trị còn một phần thì không
- 
+
 Trường hợp cuối này thường có một số biến thể. Bạn có thể khai báo một số thành viên trong đối tượng nhưng không phải tất cả chúng. Bạn có thể quên mất không chỉ định bộ nhớ và rồi khởi tạo "biến" con trỏ chưa được khởi tạo. Nghĩa là bạn thực sự chọn một cách ngẫu nhiên  một phần của bộ nhớ máy tính và gán chúng một số giá trị. Nó có thể là bộ nhớ chứa dữ liệu. Nó có thể là bộ nhớ chứa code. Nó có thể là bộ nhớ chứa hệ điều hành. Triệu chứng của những vấn đề về con trỏ thay đổi theo thời gian nên lỗi về con trỏ khó sửa hơn bất kì lỗi nào khác.
 
 Sau đây sẽ là hướng dẫn để tránh các vấn đề về khởi tạo:
@@ -152,30 +154,30 @@ Sau đây sẽ là hướng dẫn để tránh các vấn đề về khởi tạ
     float studentGrades[ MAX_STUDENTS ] = { 0.0 };
 **Khởi tạo biến gần vị trí nó được dùng lần đầu tiên**. Một số ngôn ngữ (ví dụ Visual Basic) không hỗ trợ việc khởi tạo biến khi chúng được khởi tạo. Bạn có thể thực hiện theo coding style như sau,  khai báo nhóm thánh 1 nhóm, khởi tạo nhóm thành 1 nhóm như ví dụ bên dưới. Làm như vậy tất cả đều xa việc sử dụng đầu tiên của các biến.
 
-**Tham khảo chéo** 
+**Tham khảo chéo**
 *Kiểm tra các tham số truyền vào cũng là một cách để bảo vệ chương trình. Chi tiêt tại chương 8*
 
 >Phần này trong tài liệu gốc có dẫn link tới chương 8
 
-     Example 10-2. 
-    
+     Example 10-2.
+
     ' declare all variables
     Dim accountIndex As Integer
     Dim total As Double
     Dim done As Boolean
-    
+
     ' initialize all variables
     accountIndex = 0
     total = 0.0
     done = False
     ...
-    
+
     ' code using accountIndex
     ...
-    
+
     ' code using total
     ...
-    
+
     ' code using done
     While Not done
        ...
@@ -183,18 +185,18 @@ Sau đây sẽ là hướng dẫn để tránh các vấn đề về khởi tạ
 Một cách luyện tập tốt hơn nữa là khởi tạo biến thật gần với vị trí mà lần đầu tiên biến được sử dụng giống như ví dụ bên dưới.
 
     Example 10-3. Visual Basic Example of Good Initialization
-    
+
     Dim accountIndex As Integer
-    
+
     accountIndex = 0
     ' code using accountIndex
     ...
-    
+
     Dim total As Double
     total = 0.0       <-- 1
     ' code using total
     ...
-    
+
     Dim done As Boolean
     done = False       <-- 2
     ' code using done
