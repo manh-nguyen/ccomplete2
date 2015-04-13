@@ -1,4 +1,4 @@
-# D-ch-Code-Complete-Edition-2
+# Dịch-Code-Complete-Edition-2
 Dịch Code Complete  Edition 2 - Cuốn sách lập trình viên nào cũng nên đọc
 
 Bạn nào chưa down được sách  thì trong repo đã có sẵn 1 bản ebook .epub, nên dùng add-on hỗ trợ đọc epub của firefox thì sẽ dễ phối hợp với các trình hỗ trợ dịch
