@@ -1,6 +1,8 @@
 # Dịch-Code-Complete-Edition-2
 Dịch Code Complete  Edition 2 - Cuốn sách lập trình viên nào cũng nên đọc
 
+Để đăng kí dịch, hoặc thay đổi thông tin của mình thì có thể edit file List_Translators.md trên repo rồi gửi pull request 
+
 Bạn nào chưa down được sách  thì trong repo đã có sẵn 1 bản ebook .epub, nên dùng add-on hỗ trợ đọc epub của firefox thì sẽ dễ phối hợp với các trình hỗ trợ dịch
 Các bản dịch của từng chương được lưu ở dạng Markdown, bạn nào chưa biết sử dụng MD thì đọc hướng dẫn ở dưới:
 
