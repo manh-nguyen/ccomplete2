@@ -37,3 +37,16 @@ Tốc độ dịch chậm, chất lượng dịch chưa cao, nhờ biên tập c
 
 
 ----
+
+2 Nguyễn Đình Nghĩa
+
+  Joker
+  
+  nghiand1010@gmail.com
+  
+  nguyendinhnghiahd1010
+  
+  Chuong 1
+  
+  Mình thích dịch từ đầu tới cuối.
+
