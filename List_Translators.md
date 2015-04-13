@@ -31,7 +31,7 @@ thanhmssl10@gmail.com
 
 thanhmssl10
 
-Chương 10, các phần đã dịch là 10.1, 10.2, 10.3, đang tạm dừng, bạn nào dịch có thể bắt đầu từ 10.4
+Chương 10, các phần đã dịch xong là 10.1, 10.2, 10.3, đang tạm dừng, bạn nào dịch có thể bắt đầu từ 10.4
 
 Tốc độ dịch chậm, chất lượng dịch chưa cao, nhờ biên tập chú ý giúp bài dịch.
 
