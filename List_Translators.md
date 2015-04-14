@@ -50,3 +50,18 @@ Tốc độ dịch chậm, chất lượng dịch chưa cao, nhờ biên tập c
   
   Mình thích dịch từ đầu tới cuối.
 
+---
+
+3
+
+Nguyễn Tuấn Kiệt
+
+k12k12pro
+
+k12k12pro@gmail.com
+
+kietnguyen2410
+
+dịch khá chậm, câu chữ lủng củng.
+
+---
