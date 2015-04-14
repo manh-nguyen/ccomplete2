@@ -62,6 +62,8 @@ k12k12pro@gmail.com
 
 kietnguyen2410
 
+tiếp tục chương 10.4
+
 dịch khá chậm, câu chữ lủng củng.
 
 ---
