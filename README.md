@@ -13,6 +13,8 @@ Bạn nào chưa down được sách  thì trong repo đã có sẵn 1 bản ebo
 Trình đọc file epub  bạn có thể dùng  add-on đọc epub của firefox/chrome để đọc,sẽ giúp bạn phối hợp với các trình hỗ trợ dịch như Lingoes, GoldenDict tốt hơn.
 Trình đọc/sửa file Markdown thì bạn có thể sử dụng Atom.
 
+Khi dịch mà gặp câu nào không dịch được, hoặc dịch không ưng ý,,.. thì có thể comment lại để mọi người sửa giúp ( comment bằng quote `>`) và có thể đăng câu hỏi lên những box hỏi đáp tiếng anh của DayNhauHoc.com để hỏi.
+
 **Cách dùng .md file:**
 ------------
 
@@ -27,8 +29,6 @@ Dùng offline thì có phần mềm Atom khá hay để viết Markdown
 -------------
 Để đăng kí dịch, hoặc thay đổi thông tin của mình thì có thể edit file List_Translators.md trên repo rồi gửi pull request.
 Để tránh trường hợp bị trùng phần/chương dịch thì các bạn phải ghi rõ phần/chương mình dịch vào file List_Translators.md, khi có thay đổi (ví dụ như dừng dịch tại phần nào đó, hoặc chuyển phần dịch) thì cũng phải edit file List_Translators.md, rồi ghi rõ vào trong phần ghi chú. Edit xong thì pull request về repo chính. Để chắc chắn các bạn có thể thông báo lên cả topic dịch Code Complete trên DayNhauHoc.com.
-
-**Chú ý:** nếu khi dịch mà gặp câu nào không dịch được, hoặc dịch không ưng ý, hoặc bản gốc có vấn đề gì đó,.. thì có thể comment lại để mọi người sửa giúp ( comment bằng quote `>`) hoặc có thể đăng câu hỏi lên những box hỏi đáp tiếng anh của DayNhauHoc.com để hỏi.
 
 **Hướng dẫn chèn ảnh**
 ------------------
