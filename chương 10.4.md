@@ -100,6 +100,8 @@ Ví dụ 10-7.
 |done | ( line 70 - line 4 + 1 ) = 67|
 |Average Live Time | ( 27 + 67 + 67 ) / 3 ≈ 54|
 
+>làm thế nào chữ trong bảng không bị bôi đen
+
 Ví dụ trên được sửa lên bên dưới để nhận thấy biến có thể được gọi gần nhau hơn
 
 ```
