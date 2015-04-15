@@ -78,9 +78,8 @@ Ví dụ 10-7.
 ```
 
 Đây là thời gian tồn tại cho các biến trong ví dụ này:
-----------
+|----------|------|
 | recordIndex | ( line 28 - line 2 + 1 ) = 27 |
-|-------|------|
 | total | ( line 69 - line 3 + 1 ) = 67 |
 |done | ( line 70 - line 4 + 1 ) = 67|
 |Average Live Time | ( 27 + 67 + 67 ) / 3 ≈ 54|
