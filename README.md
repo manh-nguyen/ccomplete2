@@ -44,7 +44,7 @@ Ta sẽ đặt tên repo chính là repo O (original) , repo của bạn là rep
 
 Cách làm:
 Bạn ấn vào `New pull request`  như bình thường, nó sẽ kiểu như này, có thể hơi khác nhưng không sao, mình cứ "loanh quanh" 3 cái  khoanh đỏ kia kiểu gì cũng sẽ được :blush:
-!(Images/Update_Github.png)
+![](Images/Update_Github.png)
 
 Bạn cứ ấn làm sao cho bên gửi PR là repo O (repo chính) còn bên nhận PR là repo U (repo của bạn)
 nếu khi thay đổi mà gặp "biến" thì sẽ dùng nút CAF, xong xuôi thì `Creat pull request` như bình thường, và bạn sẽ nhận được 1 thông báo là vừa nhận được 1 PR từ repo O ->Merge -> done!
