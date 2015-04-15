@@ -5,19 +5,23 @@ Bạn nào chưa down được sách  thì trong repo đã có sẵn 1 bản ebo
 Các bản dịch của từng chương được lưu ở dạng Markdown, bạn nào chưa biết sử dụng MD thì đọc hướng dẫn ở dưới:
 
 **Cách dùng .md file:**
+------------
+
 https://help.github.com/articles/github-flavored-markdown/
 Hoặc đơn giản bạn viết trực tiếp nội dung trên 2 trang web dưới đây là copy lại vào file .md ở máy khi xong việc
 http://jbt.github.io/markdown-editor
 https://stackedit.io/
 Dùng offline thì có phần mềm Atom khá hay để viết Markdown
 
-***Đăng kí dịch*
+**Đăng kí dịch**
+-------------
 Để đăng kí dịch, hoặc thay đổi thông tin của mình thì có thể edit file List_Translators.md trên repo rồi gửi pull request.
 Để tránh trường hợp bị trùng phần/chương dịch thì các bạn phải ghi rõ phần/chương mình dịch vào file List_Translators.md, khi có thay đổi (ví dụ như dừng dịch tại phần nào đó, hoặc chuyển phần dịch) thì cũng phải edit file List_Translators.md, rồi ghi rõ vào trong phần ghi chú. Edit xong thì pull request về repo chính. Để chắc chắn các bạn có thể thông báo lên cả topic dịch Code Complete trên DayNhauHoc.com.
 
 **Chú ý:** nếu khi dịch mà gặp câu nào không dịch được, hoặc dịch không ưng ý, hoặc bản gốc có vấn đề gì đó,.. thì có thể comment lại để mọi người sửa giúp ( comment bằng quote `>`) hoặc có thể đăng câu hỏi lên những box hỏi đáp tiếng anh của DayNhauHoc.com để hỏi.
 
 **Hướng dẫn chèn ảnh**
+------------------
 
 Ảnh thì mình sẽ lược bỏ những cái không cần thiết đi, ví dụ như cái Key Point thì thay bằng chữ luôn, còn những ảnh quan trọng thì phải cho vào 1 thư mục, sau đó dẫn link vào md file là được.
 Chèn ảnh cấu trúc là:
@@ -36,6 +40,7 @@ sau đó ghi vào vị trí cần chèn là
     ![Thông tin ảnh](Images/tenanh.jpg)
 
 **Hướng dẫn Update dữ liệu từ repo chính**
+------------
 Để tránh bị báo lỗi  out of date thì nguyên tắc sử dụng GIT đó là các bạn phải thường xuyên PULL các update từ git về trước khi tiến hành sửa, hoặc commit hoặc push.
 Đây là cách update dữ liệu từ repo chính mà không cần dùng dòng lệnh hay xóa repo cũ đã fork rồi fork lại nữa. Cách này chỉ cần làm trên giao diện web github.com
 Nguyên lý:
