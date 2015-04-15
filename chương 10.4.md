@@ -34,7 +34,6 @@ Ví dụ 10-6. ví dụ
 
 > thiếu
 
-```
 
 ###Tìm hiểu thêm
 
@@ -57,7 +56,8 @@ Không giống như phạm vi biến, thời ian tồn tại của biến không
 
 Bạn có thể hình thành khái niệm thời gian tồn tại của biến bằng cách đếm số dòng giữa lần đầu và lần cuối gọi biến ( bao gồm cả lần đầu và lần cuối). Đây là ví dụ về thời gian tồn tại biến quá dài
 
-``` Ví dụ 10-7.
+```
+Ví dụ 10-7.
 
 1 // khởi chạy mọi biến
 
@@ -94,14 +94,14 @@ Bạn có thể hình thành khái niệm thời gian tồn tại của biến b
 
 Đây là thời gian tồn tại cho các biến trong ví dụ này:
 ----------
-| recordIndex |: ( line 28 - line 2 + 1 ) = 27 |
+| recordIndex | ( line 28 - line 2 + 1 ) = 27 |
 |------------- | ----------------------------|
 
-| total 		| ( line 69 - line 3 + 1 ) = 67 |
+| total | ( line 69 - line 3 + 1 ) = 67 |
 
-done | ( line 70 - line 4 + 1 ) = 67
+|done | ( line 70 - line 4 + 1 ) = 67|
 
-Average Live Time | ( 27 + 67 + 67 ) / 3 ≈ 54
+|Average Live Time | ( 27 + 67 + 67 ) / 3 ≈ 54|
 
 Ví dụ trên được sửa lên bên dưới để nhận thấy biến có thể được gọi gần nhau hơn
 
@@ -116,8 +116,8 @@ Ví dụ 10-8. ví dụ về biến java với thời gian tồn tại ngắn
 
 ....
 
-
 ```
+
 
 (1)
 (2)
