@@ -60,35 +60,20 @@ Bạn có thể hình thành khái niệm thời gian tồn tại của biến b
 Ví dụ 10-7.
 
 1 // khởi chạy mọi biến
-
 2 recordIndex= 0;
-
 3 total = 0;
-
 4 done = false;
-
 	...
-
 26 while ( recordIndex < recordCount ) {
-
 27 ...
-
 28 recordIndex = recordIndex +1;    **<--1**
-
 	...
-
 64 while (!done) {
-
 	...
-
 69 if ( total > projectedTotal ) { 		**<--2**
-
 70 	done=true;			**<--3**
-
 (1) lần cuối gọi recordIndex.
-
 (2) lần cuối gọi total.
-
 (3) lần cuối gọi done.
 ```
 
