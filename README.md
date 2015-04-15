@@ -1,12 +1,22 @@
-# Dịch-Code-Complete-Edition-2
-Dịch Code Complete  Edition 2 - Cuốn sách lập trình viên nào cũng nên đọc
+Dự án dịch sách: Code-Complete Edition 2 (Steve McConnell)
+===========================================================
+Code Complete  Edition 2 - Cuốn sách lập trình viên nào cũng nên đọc
 
-Bạn nào chưa down được sách  thì trong repo đã có sẵn 1 bản ebook .epub, nên dùng add-on hỗ trợ đọc epub của firefox thì sẽ dễ phối hợp với các trình hỗ trợ dịch.
-Các bản dịch của từng chương được lưu ở dạng Markdown, bạn nào chưa biết sử dụng MD thì đọc hướng dẫn ở dưới:
+-------------------------------------------------
+**Bản chưa có cuốn sách đó bản tiếng anh?**
+----------------------
+
+Bạn nào chưa down được sách  thì trong repo đã có sẵn 1 bản ebook .epub
+
+**Hướng dẫn về cách dịch**
+-----------------------
+Trình đọc file epub  bạn có thể dùng  add-on đọc epub của firefox/chrome để đọc,sẽ giúp bạn phối hợp với các trình hỗ trợ dịch như Lingoes, GoldenDict tốt hơn.
+Trình đọc/sửa file Markdown thì bạn có thể sử dụng Atom.
 
 **Cách dùng .md file:**
 ------------
 
+Các bản dịch của từng chương được lưu ở dạng Markdown
 https://help.github.com/articles/github-flavored-markdown/
 Hoặc đơn giản bạn viết trực tiếp nội dung trên 2 trang web dưới đây là copy lại vào file .md ở máy khi xong việc
 http://jbt.github.io/markdown-editor
